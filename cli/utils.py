@@ -1,4 +1,5 @@
 import questionary
+import os
 from typing import List, Optional, Tuple, Dict
 
 from cli.models import AnalystType
@@ -243,7 +244,7 @@ def select_llm_provider() -> tuple[str, str]:
     """Select the OpenAI api url using interactive selection."""
     # Define OpenAI api options with their corresponding endpoints
     BASE_URLS = [
-        ("OpenAI", "https://api.openai.com/v1"),
+        ("OpenAI", os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")),
         ("Anthropic", "https://api.anthropic.com/"),
         ("Google", "https://generativelanguage.googleapis.com/v1"),
         ("Openrouter", "https://openrouter.ai/api/v1"),
