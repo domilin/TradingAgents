@@ -1,4 +1,4 @@
 export FINNHUB_API_KEY=d1igmphr01qhsrhffu9gd1igmphr01qhsrhffua0
 
-export OPENAI_API_KEY=sk-oYda10b6bf2d13091b0f4f5a8b18e9eaec408a8bbc9BQYDP
+export OPENAI_API_KEY=sk-ZkGeda2277c968826f84920667eee5471eefdcda58dS5FGE
 export OPENAI_BASE_URL=https://api.gptsapi.net/v1
